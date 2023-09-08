@@ -1,0 +1,73 @@
+  <div className="relative px-8 bg-[#292C2D]">
+          <div className="flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center">
+            {/* <div className="md:w-6/12 flex-shrink-0 relative ">
+              <Image
+                className="mb-5"
+                height={500}
+                width={500}
+                src="/agrixcelerate.png"
+                alt="logo"
+                sizes="(max-width: 768px) 100vw"
+                objectFit="none"
+              />
+            </div> */}
+            <div className="md:w-6/12 mt-16 md:mt-0 md:mr-12 lg:mr-16 md:order-first">
+              <div class="g:py-8 text-center md:text-left">
+                <span class="font-bold text-white text-sm text-center md:text-left uppercase">
+                  About AgriXcelerate
+                </span>
+                <h2 class="font-display text-[#FFCA08] uppercase text-4xl font-black text-secondary-500 md:text-3xl lg:text-5xl tracking-wide text-center mt-4 lg:leading-tight md:text-left">
+                  Accelerating Digital Innovation for Agriculture
+                </h2>
+                <p class="mt-4 text-white text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-200">
+                  The AgriXcelerate Bootcamp is a cutting-edge program hosted by
+                  CSU-TBIs (BisNEST and CVLTBI) that focuses on accelerating
+                  digital innovations in agriculture. As a leading institution
+                  in promoting entrepreneurship and technology-driven solutions,
+                  CSU-TBIs brings together experts, industry leaders, and
+                  passionate individuals to drive impactful change in the
+                  agricultural sector.
+                  <br></br>
+                  <br></br>
+                  The AgriXcelerate is designed for young entrepreneurs,
+                  startups, researchers, and enthusiasts who are passionate
+                  about leveraging digital innovations to revolutionize
+                  agriculture. This bootcamp will give them the opportunity to
+                  be at the forefront of this transformation, equipping them
+                  with the knowledge, skills, and network needed to drive
+                  digital innovations that will shape the future of agriculture.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* <div className="flex flex-col align-center justify-center text-center mt-52 mx-auto px-auto">
+            <Image
+            className="mb-5"
+              height={500}
+              width={500}
+              src="/agrixcelerate.png"
+              alt="logo"
+              sizes="(max-width: 768px) 100vw"
+              objectFit="none"
+            />
+
+            <p className="inline-block md:w-[32rem]">
+              The AgriXcelerate Bootcamp is a cutting-edge program hosted by
+              CSU-TBIs (BisNEST and CVLTBI) that focuses on accelerating digital
+              innovations in agriculture. As a leading institution in promoting
+              entrepreneurship and technology-driven solutions, CSU-TBIs brings
+              together experts, industry leaders, and passionate individuals to
+              drive impactful change in the agricultural sector.
+            </p>
+            <br></br>
+            <p className="inline-block md:w-[32rem]">
+              The AgriXcelerate is designed for young entrepreneurs, startups,
+              researchers, and enthusiasts who are passionate about leveraging
+              digital innovations to revolutionize agriculture. This bootcamp
+              will give them the opportunity to be at the forefront of this
+              transformation, equipping them with the knowledge, skills, and
+              network needed to drive digital innovations that will shape the
+              future of agriculture.
+            </p>
+          </div> */}
+        </div>
