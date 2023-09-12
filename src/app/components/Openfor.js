@@ -30,7 +30,7 @@ export default function Openfor() {
 
   return (
     <>
-      <p className="text-[#142D59] text-1xl lg:text-3xl font-bold mb-5">Open for {currentText}</p>
+      <p className="text-[#142D59] text-2xl lg:text-3xl font-bold mb-5">Open for {currentText}</p>
     </>
   );
 }

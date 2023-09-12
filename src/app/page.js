@@ -5,49 +5,11 @@ import Goals from "./Goals";
 import Mechanics from "./Mechanics";
 import Flowchart from "./Flowchart";
 
-
+import Header from "./components/Header";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="relative w-full mx-auto bg-[#e6e8ee] ">
-        <div className="max-w-screen-xl mx-auto">
-          <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-            <div className="lg:w-0 lg:flex-1">
-              <Image
-                height={200}
-                width={200}
-                src="/agrixcelerate.png"
-                alt="logo"
-                sizes="(max-width: 768px) 100vw"
-                objectFit="none"
-              />
-            </div>
-            <div className="-mr-2 -my-2 md:hidden">
-              <button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"></button>
-            </div>
-            <nav className="hidden md:flex space-x-10">
-              <a
-                className="text-base leading-6 font-medium text-secondary-500 hover:text-primary-500 border-transparent border-b-2 hover:border-primary-500 hover:border-b-primary hover:border-b-2 focus:outline-none focus:text-primary-500 transition duration-300"
-                href="/home"
-              >
-                Home
-              </a>
-              <a
-                className="text-base leading-6 font-medium text-secondary-500 hover:text-primary-500 border-transparent border-b-2 hover:border-primary-500 hover:border-b-primary hover:border-b-2 focus:outline-none focus:text-primary-500 transition duration-300"
-                href="/blog"
-              >
-                Blog
-              </a>
-              <a
-                className="text-base leading-6 font-medium text-secondary-500 hover:text-primary-500 border-transparent border-b-2 hover:border-primary-500 hover:border-b-primary hover:border-b-2 focus:outline-none focus:text-primary-500 transition duration-300"
-                href="/about"
-              >
-                About
-              </a>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header />
       <main className="flex-grow">
         <Timer />
         <About />
