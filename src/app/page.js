@@ -1,9 +1,10 @@
 import Image from "next/image";
-import Timer from "./components/Timer";
-import About from "./components/About";
-import Goals from "./components/Goals";
-import Mechanics from "./components/Mechanics";
-import Flowchart from "./components/Flowchart";
+import Timer from "./Timer";
+import About from "./About";
+import Goals from "./Goals";
+import Mechanics from "./Mechanics";
+import Flowchart from "./Flowchart";
+
 
 export default function Home() {
   return (

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Openfor from "../components/Openfor";
 
 export default function Timer() {
   const [days, setDays] = useState(0);
@@ -48,47 +49,47 @@ export default function Timer() {
       <section>
         <div className="relative h-screen">
           <div className="flex flex-col justify-items-center items-center text-center max-w-screen-xl  mx-auto py-20 md:py-24">
-            <p className="text-[#35A448] text-4xl font-semibold mb-5 mt-20">
+            <p className="text-[#35A448] text:2xl lg:text-4xl font-semibold mb-5 mt-20 ">
               {" "}
               Submision Deadline of Proposal
             </p>
 
-            <div className="text-[#142D59] flex gap-5 flex-center items-center mb-5">
+            <div className="text-[#142D59] flex gap-2 lg:gap-5  flex-center items-center mb-5">
               <div className="text-center ">
-                <h1 className="text-6xl font-extrabold">
+                <h1 className="lg:text-6xl text-4xl font-extrabold">
                   {stopTimer ? 0 : days}
                 </h1>
                 <span>Days</span>
               </div>
               <span className="font-extrabold">:</span>
               <div className="text-center">
-                <h1 className="text-6xl font-extrabold">
+                <h1 className="lg:text-6xl text-4xl font-extrabold">
                   {stopTimer ? 0 : hours}
                 </h1>
                 <span>Hours</span>
               </div>
               <span className="font-extrabold">:</span>
               <div className="text-center">
-                <h1 className="text-6xl font-extrabold">
+                <h1 className="lg:text-6xl text-4xl font-extrabold">
                   {stopTimer ? 0 : minutes}
                 </h1>
                 <span>Minutes</span>
               </div>
               <span className="font-extrabold">:</span>
               <div className="text-center">
-                <h1 className="text-6xl font-extrabold">
+                <h1 className="lg:text-6xl text-4xl font-extrabold">
                   {stopTimer ? 0 : seconds}
                 </h1>
                 <span>Seconds</span>
               </div>
             </div>
 
-            <h1 className="text-[#142D59] text-3xl mb-5">Open for Students</h1>
+            <Openfor />
 
-            <h1 className="text-[#35A448]  text-2xl uppercase font-semibold">
+            <h1 className="text-[#35A448] text-1xl lg:text-2xl uppercase font-semibold">
               Digital Agriculture Innovation Challenge 2023
             </h1>
-            <p className="text-[#142D59]">
+            <p className="text-[#142D59] text-sm lg:text-lg">
               AgriXcelerate: Accelerating Digital Innovation for Agriculture
             </p>
 
