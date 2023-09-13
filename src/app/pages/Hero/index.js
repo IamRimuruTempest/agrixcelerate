@@ -3,11 +3,12 @@ export default function Hero() {
   return (
     <>
       <section id="organizer">
-        <div className="relative h-screen ">
-          <div className="max-w-screen-xl mx-auto py-20 md:py-24">
+        <div className="relative h-screen  overflow-hidden  ">
+          {/* <div className="max-w-screen-xl mx-auto py-20 md:py-24"> */}
+          <div className=" mx-auto py-20 md:py-24">
             <div className="absolute z-30">
               <div className=" max-w-screen-xl mx-auto py-20 md:py-24">
-                <div className="max-w-2xl mx-auto my-12 md:mt-18 lg:mt-20 ">
+                <div className="w-1/2  mx-auto my-12 md:mt-18 lg:mt-20 ">
                   <div className="my-6 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-full">
                     <p className="font-bold text-white text-sm text-center uppercase">
                       About AgriXcelerate
@@ -43,13 +44,25 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <Image
+
+            {/* <Image
               className="absolute z-0"
               src="/bg drone.jpg"
               alt="background"
               layout="fill"
               objectFit="cover"
+            /> */}
+
+            <Image
+              src="/bg drone.jpg"
+              alt="background"
+              fill
+              className="object-cover w-full h-full bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_6.82%,rgba(0,0,0,0.00)_81.44%)]"
+              quality="100"
+              unoptimized={true}
             />
+
+            <div className="absolute w-full h-full bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_6.82%,rgba(0,0,0,0.00)_81.44%)]"></div>
           </div>
         </div>
       </section>
