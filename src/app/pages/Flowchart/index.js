@@ -1,7 +1,7 @@
 export default function Flowchart() {
   return (
     <>
-      <section>
+      <section id="timeline">
         <div className="relative px-8">
           <div className=" max-w-screen-xl mx-auto py-20 md:py-24">
             <p className="font-bold text-sm text-center uppercase">agrixcelerate timeline</p>

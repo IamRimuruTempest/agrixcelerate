@@ -1,53 +1,85 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { motion } from "framer-motion";
 export default function Header() {
+  const [navbar, setNavbar] = useState(false);
   return (
     <>
-      <header className="relative w-full mx-auto bg-[#e6e8ee] ">
-        <div className="max-w-screen-xl mx-auto">
-          <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-            <div className="lg:w-0 lg:flex-1">
-              <Image
-                height={200}
-                width={200}
-                src="/agrixcelerate.png"
-                alt="logo"
-                sizes="(max-width: 768px) 100vw"
-                objectFit="none"
-              />
-            </div>
-            <div className="-mr-2 -my-2 md:hidden">
-              <button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  className="h-6 w-6"
-                  aria-hidden="true"
+      <header className="z-40">
+        <div>
+          <div className="w-full bg-transparent fixed top-0 left-0 right-0 z-10">
+            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+              <div>
+                <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                  {/* LOGO */}
+                  <Link href="#home">
+                    <Image
+                      height={200}
+                      width={200}
+                      src="/agrixcelerate.png"
+                      alt="logo"
+                      sizes="(max-width: 768px) 100vw"
+                      objectFit="none"
+                    />
+                  </Link>
+                  {/* HAMBURGER BUTTON FOR MOBILE */}
+                  <div className="md:hidden">
+                    <button
+                      className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                      onClick={() => setNavbar(!navbar)}
+                    >
+                      {navbar ? (
+                        <AiOutlineClose width={30} height={30} alt="logo" />
+                      ) : (
+                        <AiOutlineMenu
+                          width={30}
+                          height={30}
+                          alt="logo"
+                          className="focus:border-none active:border-none"
+                        />
+                      )}
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                    navbar ? "p-12 md:p-0 block" : "hidden"
+                  }`}
                 >
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                </svg>
-              </button>
+                  <ul className="h-screen md:h-auto items-center justify-center text-center md:flex ">
+                    <li className=" text-[#142D58] py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-[#35A448]    md:hover:text-[#35A448] md:hover:bg-transparent">
+                      <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                        About
+                      </Link>
+                    </li>
+                    <li className=" text-[#142D58]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-[#35A448]    md:hover:text-[#35A448] md:hover:bg-transparent">
+                      <Link href="#goal" onClick={() => setNavbar(!navbar)}>
+                        Goals
+                      </Link>
+                    </li>
+                    <li className=" text-[#142D58]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-[#35A448]    md:hover:text-[#35A448] md:hover:bg-transparent">
+                      <Link
+                        href="#mechanics"
+                        onClick={() => setNavbar(!navbar)}
+                      >
+                        Mechanics
+                      </Link>
+                    </li>
+                    <li className="  text-[#142D58]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-[#35A448]    md:hover:text-[#35A448] md:hover:bg-transparent">
+                      <Link href="#timeline" onClick={() => setNavbar(!navbar)}>
+                        Timeline
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <nav className="hidden md:flex space-x-10">
-              <a
-                className="text-base leading-6 font-medium text-secondary-500 hover:text-primary-500 border-transparent border-b-2 hover:border-primary-500 hover:border-b-primary hover:border-b-2 focus:outline-none focus:text-primary-500 transition duration-300"
-                href="/home"
-              >
-                Home
-              </a>
-              <a
-                className="text-base leading-6 font-medium text-secondary-500 hover:text-primary-500 border-transparent border-b-2 hover:border-primary-500 hover:border-b-primary hover:border-b-2 focus:outline-none focus:text-primary-500 transition duration-300"
-                href="/blog"
-              >
-                Blog
-              </a>
-              <a
-                className="text-base leading-6 font-medium text-secondary-500 hover:text-primary-500 border-transparent border-b-2 hover:border-primary-500 hover:border-b-primary hover:border-b-2 focus:outline-none focus:text-primary-500 transition duration-300"
-                href="/about"
-              >
-                About
-              </a>
-            </nav>
           </div>
         </div>
       </header>

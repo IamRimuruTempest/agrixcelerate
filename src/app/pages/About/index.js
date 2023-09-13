@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <>
-      <section>
+      <section id="about">
         <div className="relative px-8 bg-[#2B2B2B]">
           <div className=" max-w-screen-xl mx-auto py-20 md:py-24">
             <div className="max-w-2xl mx-auto my-12 md:mt-18 lg:mt-20 ">

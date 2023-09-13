@@ -1,7 +1,7 @@
 export default function Mechanics() {
   return (
     <>
-      <section>
+      <section id="mechanics">
         <div className="relative px-8 bg-[#2B2B2B]">
           <div className=" max-w-screen-xl mx-auto py-20 md:py-24">
             <div className="max-w-2xl mx-auto my-12 md:mt-18 lg:mt-20 ">
@@ -68,9 +68,9 @@ export default function Mechanics() {
                 <div className="flex justify-center items-center">
                   <a
                     title="Download Full Mechanics"
-                    target="_self"
+                    target="_blank"
                     className="inline-block uppercase mt-8 md:mt-8 px-8 py-3 border border-white hover:border-[#FFCA08] text-base  leading-6 font-medium rounded-full bg-primary-500 hover:bg-primary-700 hover:text-[#FFCA08] focus:outline-none focus:border-primary-700 focus:shadow-outline-indigo  transition ease-in-out duration-150"
-                    href=""
+                    href="/Digital Agriculture Innovation Challenge Guidelines.pdf"
                   >
                     Download Full Mechanics
                   </a>

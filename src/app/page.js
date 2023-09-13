@@ -1,21 +1,29 @@
 import Image from "next/image";
-import Timer from "./Timer";
-import About from "./About";
-import Goals from "./Goals";
-import Mechanics from "./Mechanics";
-import Flowchart from "./Flowchart";
+// import Goals from "./Goals";
+// import Mechanics from "./Mechanics";
+// import Flowchart from "./Flowchart";
 
+import Timer from "./pages/Timer";
+import About from "./pages/About";
+import Goals from "./pages/Goals";
+import Mechanics from "./pages/Mechanics";
+import Flowchart from "./pages/Flowchart";
+import Organizer from "./pages/Organizer";
 import Header from "./components/Header";
+import Hero from "./pages/Hero";
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
+        <Hero />
         <Timer />
         <About />
         <Goals />
         <Mechanics />
         <Flowchart />
+        <Organizer />
 
         {/* <div className="relative px-8 bg-[#2B2B2B]">
           <div className=" max-w-screen-xl mx-auto py-20 md:py-24">

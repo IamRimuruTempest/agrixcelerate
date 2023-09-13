@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Openfor from "../components/Openfor";
-
+import Openfor from "@/app/components/Openfor";
+import { motion } from "framer-motion";
 export default function Timer() {
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -46,10 +46,16 @@ export default function Timer() {
 
   return (
     <>
-      <section>
-        <div className="relative h-screen">
+      <section id="home">
+        <motion.div
+          className="relative h-screen"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 3 }}
+        >
           <div className="flex flex-col justify-items-center items-center text-center max-w-screen-xl  mx-auto py-20 md:py-24">
-            <p className="text-[#35A448] text:2xl lg:text-4xl font-semibold mb-5 mt-20 ">
+            <p className="text-[#35A448] text-2xl lg:text-4xl font-semibold mb-5 mt-20 ">
               {" "}
               Submision Deadline of Proposal
             </p>
@@ -97,9 +103,9 @@ export default function Timer() {
 
             <a
               title="Read our blog"
-              target="_self"
+              target="_blank"
               className="inline-block mt-8 md:mt-8 px-8 py-3 border border-transparent text-base text-white leading-6 font-medium rounded-md bg-primary-500 hover:bg-primary-700 focus:outline-none focus:border-primary-700 focus:shadow-outline-indigo bg-[#142D59] transition ease-in-out duration-150"
-              href="/blog"
+              href="https://rb.gy/jcheb"
             >
               REGISTER
             </a>
@@ -115,6 +121,7 @@ export default function Timer() {
           /> */}
           <div className="absolute bottom-0">
             <Image
+              className="invisible md:visible"
               height={2000}
               width={2000}
               src="/bg.png"
@@ -123,7 +130,7 @@ export default function Timer() {
               objectFit="none"
             />
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

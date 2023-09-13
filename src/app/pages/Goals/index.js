@@ -1,7 +1,9 @@
+"use client";
+import { motion } from "framer-motion";
 export default function Goals() {
   return (
     <>
-      <section>
+      <section id="goal">
         <div className="relative px-8 ">
           <div className=" max-w-screen-xl mx-auto py-20 md:py-24">
             <div className="max-w-2xl mx-auto my-12 md:mt-18 lg:mt-20 ">
@@ -14,7 +16,7 @@ export default function Goals() {
                 </h2>
 
                 <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-2">
-                  <div className="rounded-lg shadow-sm bg-[#2B2B2B]">
+                  <motion.div className="rounded-lg shadow-sm bg-[#2B2B2B]">
                     <div className="p-6">
                       <h2 className="text-2xl font-semibold leading-6 text-white">
                         Enhance Agricultural Productivity
@@ -25,7 +27,7 @@ export default function Goals() {
                         through the use of digital technologies.
                       </p>
                     </div>
-                  </div>
+                  </motion.div>
                   <div className="rounded-lg shadow-sm  bg-[#2B2B2B]">
                     <div className="p-6">
                       <h2 className="text-2xl font-semibold leading-6 text-white">
