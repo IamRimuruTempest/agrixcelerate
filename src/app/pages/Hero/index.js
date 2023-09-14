@@ -6,14 +6,15 @@ export default function Hero() {
         <div className="relative h-screen  overflow-hidden  ">
           {/* <div className="max-w-screen-xl mx-auto py-20 md:py-24"> */}
           <div className=" mx-auto py-20 md:py-24">
-            <div className="absolute z-30">
+            {/* <div className="absolute z-30">
               <div className=" max-w-screen-xl mx-auto py-20 md:py-24">
                 <div className="w-1/2  mx-auto my-12 md:mt-18 lg:mt-20 ">
+                 
                   <div className="my-6 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-full">
                     <p className="font-bold text-white text-sm text-center uppercase">
                       About AgriXcelerate
                     </p>
-                    <h2 className="font-display text-[#FFCA08] uppercase text-4xl font-black text-secondary-500 md:text-3xl lg:text-5xl tracking-wide text-center mt-4 mb-4 lg:leading-tight">
+                    <h2 className="font-display text-[#35A448] uppercase text-4xl font-black text-secondary-500 md:text-3xl lg:text-5xl tracking-wide text-center mt-4 mb-4 lg:leading-tight">
                       Accelerating Digital Innovation for Agriculture
                     </h2>
                     <p className="text-center text-white">
@@ -43,7 +44,7 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* <Image
               className="absolute z-0"
@@ -53,13 +54,26 @@ export default function Hero() {
               objectFit="cover"
             /> */}
 
+            <div className="absolute z-30">
+              <div className="w-screen mx-auto py-20 md:py-24">
+                <div className="flex justify-center align-center ma-5">
+                  <Image
+                    height={600}
+                    width={600}
+                    src="/agrixcelerate.png"
+                    alt="logo"
+                    objectFit="none"
+                  />
+                </div>
+              </div>
+            </div>
+
             <Image
-              src="/bg drone.jpg"
+              src="/bg drone.jpeg"
               alt="background"
               fill
               className="object-cover w-full h-full bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_6.82%,rgba(0,0,0,0.00)_81.44%)]"
-              quality="100"
-              unoptimized={true}
+              priority
             />
 
             <div className="absolute w-full h-full bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_6.82%,rgba(0,0,0,0.00)_81.44%)]"></div>
