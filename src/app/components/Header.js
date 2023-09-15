@@ -21,7 +21,7 @@ export default function Header() {
   }, []);
   return (
     <>
-      <nav className="z-40">
+      <nav className="z-40 overflow-hidden">
         <div className="w-full fixed top-0 left-0 right-0 z-10">
           <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
             <div>

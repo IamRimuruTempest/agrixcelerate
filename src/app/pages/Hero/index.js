@@ -90,10 +90,10 @@ export default function Hero() {
                   />
                 </div>
 
-                <div className="max-w-screen-xl mx-auto  ">
+                <div className="max-w-screen-xl mx-12 md:mx-auto lg:mx-auto ">
                   <div className="lg:w-1/2 md:w-1/2  mx-auto my-12 md:mt-6 lg:mt-8 ">
                     <div className="my-6 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-full">
-                      <p className="text-center text-white">
+                      <p className="text-center text-white text-sm md:text-base lg:text-base">
                         <span>
                           The AgriXcelerate Bootcamp is a cutting-edge program
                           hosted by CSU-TBIs (BisNEST and CVLTBI) that focuses
@@ -106,7 +106,7 @@ export default function Hero() {
                         </span>
                       </p>
                       <br></br>
-                      <p className="text-center text-white">
+                      <p className="text-center text-white text-sm md:text-base lg:text-base">
                         <span>
                           The AgriXcelerate is designed for students, graduates,
                           young entrepreneurs, startups, researchers, and
