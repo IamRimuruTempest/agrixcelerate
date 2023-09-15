@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Openfor from "@/app/components/Openfor";
 import { motion } from "framer-motion";
 export default function Time() {
   const [days, setDays] = useState(0);
@@ -36,6 +35,16 @@ export default function Time() {
       const s = Math.floor((difference % (1000 * 60)) / 1000);
       setSeconds(s);
 
+       const formattedDays = d.toString().padStart(2, "0");
+       const formattedHours = h.toString().padStart(2, "0");
+       const formattedMinutes = m.toString().padStart(2, "0");
+       const formattedSeconds = s.toString().padStart(2, "0");
+
+       setDays(formattedDays);
+       setHours(formattedHours);
+       setMinutes(formattedMinutes);
+       setSeconds(formattedSeconds);
+
       if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
         setStopTimer(true);
       }
@@ -58,28 +67,28 @@ export default function Time() {
             <div className=" flex gap-2 lg:gap-5  flex-center items-center">
               <div className="text-center ">
                 <h1 className="lg:text-6xl text-4xl font-extrabold">
-                  {stopTimer ? 0 : days}
+                  {stopTimer ? "00" : days}
                 </h1>
                 <span>Days</span>
               </div>
               <span className="font-extrabold">:</span>
               <div className="text-center">
                 <h1 className="lg:text-6xl text-4xl font-extrabold">
-                  {stopTimer ? 0 : hours}
+                  {stopTimer ? "00" : hours}
                 </h1>
                 <span>Hours</span>
               </div>
               <span className="font-extrabold">:</span>
               <div className="text-center">
                 <h1 className="lg:text-6xl text-4xl font-extrabold">
-                  {stopTimer ? 0 : minutes}
+                  {stopTimer ? "00" : minutes}
                 </h1>
                 <span>Minutes</span>
               </div>
               <span className="font-extrabold">:</span>
               <div className="text-center">
                 <h1 className="lg:text-6xl text-4xl font-extrabold">
-                  {stopTimer ? 0 : seconds}
+                  {stopTimer ? "00" : seconds}
                 </h1>
                 <span>Seconds</span>
               </div>
