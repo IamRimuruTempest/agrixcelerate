@@ -127,7 +127,7 @@ export default function Hero() {
                   <a
                     title="Read our blog"
                     target="_blank"
-                    className="uppercase inline-block mt-8 md:mt-8 px-8 py-3 border border-transparent text-base text-white leading-6 font-medium rounded-md bg-primary-500 hover:bg-primary-700 focus:outline-none focus:border-primary-700 focus:shadow-outline-indigo bg-[#35A448] transition ease-in-out duration-150"
+                    className="uppercase inline-block  px-4 py-3 border border-transparent text-base  sm:text-sm  text-white leading-6 font-medium rounded-md bg-primary-500 hover:bg-primary-700 focus:outline-none focus:border-primary-700 focus:shadow-outline-indigo bg-[#35A448] transition ease-in-out duration-150"
                     href="https://rb.gy/jcheb"
                   >
                     Register
@@ -135,7 +135,7 @@ export default function Hero() {
                   <a
                     title="Read our blog"
                     target="_blank"
-                    className="uppercase inline-block mt-8 md:mt-8 px-8 py-3 border border-white text-base text-white leading-6 font-medium rounded-md bg-primary-500 hover:bg-primary-700 focus:outline-none focus:border-primary-700 focus:shadow-outline-indigo bg-tranparent transition ease-in-out duration-150"
+                    className="uppercase inline-block  px-4 py-3 border border-white text-base sm:text-sm text-white leading-6 font-medium rounded-md bg-primary-500 hover:bg-primary-700 focus:outline-none focus:border-primary-700 focus:shadow-outline-indigo bg-tranparent transition ease-in-out duration-150"
                     href="https://csu-ttbdd.com/"
                   >
                     Visit TTBDD

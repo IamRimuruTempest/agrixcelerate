@@ -8,26 +8,30 @@ import { motion } from "framer-motion";
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
 
-  const [navSize, setnavSize] = useState("10rem");
-  const [navColor, setnavColor] = useState("#000000");
-  const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("#000000") : setnavColor("#000000");
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+    
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+
+    }
   };
-  useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent);
-    return () => {
-      window.removeEventListener("scroll", listenScrollEvent);
-    };
-  }, []);
+  window.addEventListener("scroll", changeNavbarColor);
   return (
     <>
       <nav className="z-40 overflow-hidden">
-        <div className="w-full fixed top-0 left-0 right-0 z-10">
+        <div
+          className={`w-full ${
+            colorChange ? "bg-[#E6E8EE]" : "bg-transparent"
+          } fixed top-0 left-0 right-0 z-10`}
+        >
           <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
             <div>
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
                 {/* LOGO */}
-                <Link href="#home">
+                <Link href="#hero">
                   <Image
                     height={200}
                     width={200}
@@ -59,7 +63,7 @@ export default function Header() {
             </div>
             <div>
               <div
-                className={`flex-1 justify-self-center  md:block md:pb-0 md:mt-0 bg-white lg:bg-transparent ${
+                className={`flex-1 justify-self-center  md:block md:pb-0 md:mt-0 bg-white md:bg-transparent lg:bg-transparent ${
                   navbar ? "p-12 md:p-0 block" : "hidden"
                 }`}
               >
