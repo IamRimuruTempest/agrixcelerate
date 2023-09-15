@@ -25,7 +25,7 @@ export default function Home() {
         <Goals />
         <Mechanics />
         <Flowchart />
-        <Organizer />
+        {/* <Organizer /> */}
 
         {/* <div className="relative px-8 bg-[#2B2B2B]">
           <div className=" max-w-screen-xl mx-auto py-20 md:py-24">

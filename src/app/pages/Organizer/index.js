@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Organizer() {
   return (
     <>
-      <section id="organizer">
+      <section id="organizer ">
         <div className="relative px-8">
           <div className=" max-w-screen-xl mx-auto py-20 md:py-24">
             <p className="text-center">Organized by:</p>
