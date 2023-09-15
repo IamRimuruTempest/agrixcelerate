@@ -8,17 +8,36 @@ import { motion } from "framer-motion";
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
 
-  const [colorChange, setColorchange] = useState(false);
-  const changeNavbarColor = () => {
-    if (window.scrollY >= 80) {
+  // const [colorChange, setColorchange] = useState(false);
+  // const changeNavbarColor = () => {
+  //   if (window.scrollY >= 80) {
     
-      setColorchange(true);
-    } else {
-      setColorchange(false);
+  //     setColorchange(true);
+  //   } else {
+  //     setColorchange(false);
 
-    }
-  };
-  window.addEventListener("scroll", changeNavbarColor);
+  //   }
+  // };
+  // window.addEventListener("scroll", changeNavbarColor);
+
+  const [colorChange, setColorChange] = useState(false);
+  useEffect(() => {
+    const changeNavbarColor = () => {
+      if (window.scrollY >= 80) {
+        setColorChange(true);
+      } else {
+        setColorChange(false);
+      }
+    };
+
+    // Add the scroll event listener when the component mounts
+    window.addEventListener("scroll", changeNavbarColor);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", changeNavbarColor);
+    };
+  }, []);
   return (
     <>
       <nav className="z-40 overflow-hidden">
