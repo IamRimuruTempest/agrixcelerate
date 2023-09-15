@@ -18,16 +18,24 @@ export default function Mechanics() {
                 </h2>
                 <p className="text-center mb-6">
                   <span>
-                    The iDeaTech Challenge is open to{" "}
+                    The iDeaTech Challenge is open to
+                    <span className="font-bold text-[#FFCA08]"> students</span>,
+                    <span className="font-bold text-[#FFCA08]"> graduates</span>
+                    ,<span className="font-bold text-[#FFCA08]"> faculty</span>,
+                    <span className="font-bold text-[#FFCA08]">innovators</span>
+                    ,
                     <span className="font-bold text-[#FFCA08]">
-                      {" "}
-                      students, graduates, faculty, innovators, technopreneurs,{" "}
+                      technopreneurs
                     </span>
-                    and{" "}
+                    , and
                     <span className="font-bold text-[#FFCA08]">
-                      {" "}
-                      researchers{" "}
-                    </span>{" "}
+                      researchers
+                    </span>
+                    {/* <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#FFCA08] relative inline-block">
+                      <span class="relative font-bold text-[#142D58]">
+                        researchers
+                      </span>
+                    </span> */}
                     from various universities, colleges, and institutions in the
                     Cagayan Valley Region. Region.
                   </span>

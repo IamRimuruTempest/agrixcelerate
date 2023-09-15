@@ -59,27 +59,27 @@ export default function Header() {
             </div>
             <div>
               <div
-                className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                className={`flex-1 justify-self-center  md:block md:pb-0 md:mt-0 bg-white lg:bg-transparent ${
                   navbar ? "p-12 md:p-0 block" : "hidden"
                 }`}
               >
-                <ul className="h-screen md:h-auto items-center justify-center text-center md:flex ">
-                  <li className=" text-[#142D58] py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-[#35A448]    md:hover:text-[#35A448] md:hover:bg-transparent">
+                <ul className="h-auto md:h-auto items-center justify-center text-center md:flex ">
+                  <li className=" text-[#142D58] py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:text-[#35A448]    md:hover:text-[#35A448] md:hover:bg-transparent ">
                     <Link href="#about" onClick={() => setNavbar(!navbar)}>
                       About
                     </Link>
                   </li>
-                  <li className=" text-[#142D58]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-[#35A448]    md:hover:text-[#35A448] md:hover:bg-transparent">
+                  <li className=" text-[#142D58]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:text-[#35A448]    md:hover:text-[#35A448] md:hover:bg-transparent">
                     <Link href="#goal" onClick={() => setNavbar(!navbar)}>
                       Goals
                     </Link>
                   </li>
-                  <li className=" text-[#142D58]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-[#35A448]    md:hover:text-[#35A448] md:hover:bg-transparent">
+                  <li className=" text-[#142D58]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:text-[#35A448]    md:hover:text-[#35A448] md:hover:bg-transparent">
                     <Link href="#mechanics" onClick={() => setNavbar(!navbar)}>
                       Mechanics
                     </Link>
                   </li>
-                  <li className="  text-[#142D58]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-[#35A448]    md:hover:text-[#35A448] md:hover:bg-transparent">
+                  <li className="  text-[#142D58]  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:text-[#35A448]    md:hover:text-[#35A448] md:hover:bg-transparent">
                     <Link href="#timeline" onClick={() => setNavbar(!navbar)}>
                       Timeline
                     </Link>
