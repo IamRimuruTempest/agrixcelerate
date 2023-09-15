@@ -13,7 +13,6 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className="scroll-smooth"
-      style={{ scrollBehavior: "smooth" }}
     >
       <body className={inter.className}>{children}</body>
     </html>

@@ -11,6 +11,7 @@ import Flowchart from "./pages/Flowchart";
 import Organizer from "./pages/Organizer";
 import Header from "./components/Header";
 import Hero from "./pages/Hero";
+import Time from "./pages/Time";
 
 export default function Home() {
   return (
@@ -18,8 +19,9 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <Timer />
-        <About />
+        <Time />  
+        {/* <Timer />
+        <About /> */}
         <Goals />
         <Mechanics />
         <Flowchart />
