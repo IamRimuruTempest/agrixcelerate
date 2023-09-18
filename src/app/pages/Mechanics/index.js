@@ -26,7 +26,6 @@ export default function Mechanics() {
                     <span className="font-bold text-[#FFCA08]">
                       technopreneurs
                     </span>
-                    , 
                     {/* <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#FFCA08] relative inline-block">
                       <span class="relative font-bold text-[#142D58]">
                         researchers
