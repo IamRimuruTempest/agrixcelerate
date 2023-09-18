@@ -41,9 +41,8 @@ export default function Mechanics() {
                         researchers
                       </span>
                     </span> */}{" "}
-                    from various universities and colleges in the
-                    Cagayan Valley. Every team should comprise a minimum
-                    of{" "}
+                    from various universities and colleges. Every team should
+                    comprise a minimum of{" "}
                     <span className="font-bold text-[#FFCA08]">
                       three members
                     </span>{" "}
@@ -65,6 +64,32 @@ export default function Mechanics() {
                     </span>
                     .
                   </span>
+                  <br></br>
+                  <br></br>
+                  To access the{" "}
+                  <span className="font-bold text-[#FFCA08]">
+                    Business Model Canvas Template
+                  </span>{" "}
+                  , you can simply click on this link:{" "}
+                  <a
+                    href="https://rb.gy/z1e8f"
+                    target="_blank"
+                    className="font-bold text-[#FFCA08] underline"
+                  >
+                    https://rb.gy/z1e8f
+                  </a>{" "}
+                  . Similarly, for the{" "}
+                  <span className="font-bold text-[#FFCA08]">
+                    Value Proposition Canvas Template
+                  </span>{" "}
+                  , please click on the following link:{" "}
+                  <a
+                    href="https://rb.gy/o0zxz"
+                    target="_blank"
+                    className="font-bold text-[#FFCA08] underline"
+                  >
+                    https://rb.gy/o0zxz
+                  </a>{" "}
                 </p>
 
                 {/* <ul className="text-center">

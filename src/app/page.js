@@ -12,21 +12,22 @@ import Organizer from "./pages/Organizer";
 import Header from "./components/Header";
 import Hero from "./pages/Hero";
 import Time from "./pages/Time";
+import Main from "./pages/Main";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <Hero />
-        <Time />  
+        <Main/>
+        {/* <Hero /> */}
+        <Time />
         {/* <Timer />
         <About /> */}
         <Goals />
         <Mechanics />
         <Flowchart />
         {/* <Organizer /> */}
-
         {/* <div className="relative px-8 bg-[#2B2B2B]">
           <div className=" max-w-screen-xl mx-auto py-20 md:py-24">
             <div className="max-w-2xl mx-auto my-12 md:mt-18 lg:mt-20 ">
@@ -104,7 +105,6 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-
         {/* <div className="relative px-8 ">
           <div className="flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center">
             <div className="md:w-6/12 flex-shrink-0 relative ">

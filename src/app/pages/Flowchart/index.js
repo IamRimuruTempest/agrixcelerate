@@ -8,10 +8,10 @@ export default function Flowchart() {
   const timelines = [
     {
       id: 1,
-      title: "Announcements and Call for Applicants",
+      title: "Call for Applicants",
       description:
-        "The challenge is officially announced and an open call is made for CSU students and/or graduates to submit their innovative solutions related to digital agriculture. The call for participants outlines the criteria, guidelines, and timelines for participation.",
-      date: "08/06/2023",
+        "The challenge is officially announced and an open call for students and/or graduates to submit their innovative solutions related to digital agriculture. The call for participants outlines the criteria, guidelines, and timelines for participation.",
+      date: "09/18/2023",
       icon: <GiBugleCall />,
     },
     {
@@ -19,56 +19,80 @@ export default function Flowchart() {
       title: "Screening of Entries",
       description:
         "The TBI team evaluates the submitted solutions based on predefined criteria such as innovation, impact, scalability, feasibility, and alignment with the challenge themes. The screening process may include a review of written documents of the solution.",
-      date: "08/06/2023",
+      date: "09/22/2023",
       icon: <MdPersonSearch />,
     },
     {
       id: 3,
       title: "Shortlisting of Participants",
       description:
-        "Based on the screening, a select number of participants are shortlisted. These participants are invited to participate in the AgriXcelerate Bootcamp.",
-      date: "08/06/2023",
+        "Based on the screening, a select number of participants are shortlisted. These participants are invited to participate in the AgriXcelerate Pitching Competition.",
+      date: "09/22/2023",
       icon: <FaClipboardList />,
     },
     {
       id: 4,
-      title: "Announcement of Shortlisted Participants for the BOOTCAMP",
+      title: "Announcement of Shortlisted Participants",
       description:
-        "The TBI team announces the qualified participants for the AgriXcelerate Bootcamp.",
-      date: "08/06/2023",
+        "The TBI team announces the qualified participants for the AgriXcelerate Pitching Competition.",
+      date: "09/22/2023",
       icon: <GiBugleCall />,
     },
     {
       id: 5,
-      title: "Bootcamp",
+      title: "Deadline for Pitch Deck Submission",
       description:
-        "The AgriXcelerate Bootcamp is a focused program designed to provide participants with intensive training, workshops, and mentoring sessions to refine and develop their solutions, business models, and pitches. The mentorship program connects them with experienced mentors and industry experts who provide guidance and support throughout the bootcamp.",
-      date: "08/06/2023",
+        "The TBI team will collect all the picth deck of participants until September 27, 2023 with Business Model Canvas and Value Proposition Canvas.",
+      date: "09/27/2023",
       icon: <BsPersonWorkspace />,
     },
+    // {
+    //   id: 5,
+    //   title: "Bootcamp",
+    //   description:
+    //     "The AgriXcelerate Bootcamp is a focused program designed to provide participants with intensive training, workshops, and mentoring sessions to refine and develop their solutions, business models, and pitches. The mentorship program connects them with experienced mentors and industry experts who provide guidance and support throughout the bootcamp.",
+    //   date: "08/06/2023",
+    //   icon: <BsPersonWorkspace />,
+    // },
     {
       id: 6,
-      title:
-        "Pitch Competition (Digital Agriculture Innovation Challenge 2023)",
+      title: "AgriXcelerate Pitching Competition",
       description:
-        "The Bootcamp culminates in a pitch competition where the participants present their solutions to a panel of judges, potential investors, and industry leaders. This pitching competition provides an opportunity for them to showcase their innovations, demonstrate their viability, and highlight their potential impact on the agriculture sector.",
-      date: "08/06/2023",
+        "The competition culminates in a pitch competition where the participants present their solutions to a panel of judges, potential investors, and industry leaders. This pitching competition provides an opportunity for them to showcase their innovations, demonstrate their viability, and highlight their potential impact on the agriculture sector.",
+      date: "09/29/2023",
       icon: <FaChalkboardTeacher />,
     },
+    // {
+    //   id: 6,
+    //   title:
+    //     "Pitch Competition (Digital Agriculture Innovation Challenge 2023)",
+    //   description:
+    //     "The Bootcamp culminates in a pitch competition where the participants present their solutions to a panel of judges, potential investors, and industry leaders. This pitching competition provides an opportunity for them to showcase their innovations, demonstrate their viability, and highlight their potential impact on the agriculture sector.",
+    //   date: "08/06/2023",
+    //   icon: <FaChalkboardTeacher />,
+    // },
     {
       id: 7,
       title: "Winner Selection and Awards",
       description:
         "The judging panel evaluates the pitches and selects the winners based on predefined criteria. Awards and prizes are presented to the winners to acknowledge their achievements and support the further development of their solutions.",
-      date: "08/06/2023",
+      date: "09/30/2023",
       icon: <GiPodiumWinner />,
     },
+    // {
+    //   id: 7,
+    //   title: "Winner Selection and Awards",
+    //   description:
+    //     "The judging panel evaluates the pitches and selects the winners based on predefined criteria. Awards and prizes are presented to the winners to acknowledge their achievements and support the further development of their solutions.",
+    //   date: "08/06/2023",
+    //   icon: <GiPodiumWinner />,
+    // },
     {
       id: 8,
       title: "Post-Bootcamp Support",
       description:
-        "After the bootcamp, winners and other participants may have access to post-bootcamp support, which can include access to 6-month free incubation/acceleration programs, continued mentorship, networking opportunities, or industry partnership to help scale their solutions and bring them to the market. The TBI also provides free access to office space with free internet and telephone services.",
-      date: "08/06/2023",
+        "After the competition, winners and other participants may have access to post-bootcamp support, which can include access to 6-month free incubation/acceleration programs, continued mentorship, networking opportunities, or industry partnership to help scale their solutions and bring them to the market. The TBI also provides free access to office space with free internet and telephone services.",
+      date: "10/02/2023",
       icon: <BiSupport />,
     },
   ];
@@ -98,7 +122,7 @@ export default function Flowchart() {
                       <div className="font-bold text-slate-900 ">
                         <p>{timeline.title}</p>
                       </div>
-                      <time className="font-caveat text-sm ext-slate-900 font-bold ">
+                      <time className="font-caveat text-sm text-slate-900 font-bold ">
                         {timeline.date}
                       </time>
                     </div>

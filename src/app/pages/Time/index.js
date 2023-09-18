@@ -11,7 +11,7 @@ export default function Time() {
   const [stopTimer, setStopTimer] = useState(false);
 
   useEffect(() => {
-    const target = new Date("09/23/2023 23:59:59");
+    const target = new Date("09/22/2023 23:59:59");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -100,7 +100,7 @@ export default function Time() {
             </p>
             <p className="text-base text-2xl lg:text-xl mb-5">
               {" "}
-              on March 29, 2023
+              on March 22, 2023
             </p>
           </div>
         </motion.div>
