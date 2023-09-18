@@ -18,19 +18,15 @@ export default function Mechanics() {
                 </h2>
                 <p className="text-center mb-6">
                   <span>
-                    The iDeaTech Challenge is open to
+                    The AgriXcelerate Innovation Challenge is open to
                     <span className="font-bold text-[#FFCA08]"> students</span>,
                     <span className="font-bold text-[#FFCA08]"> graduates</span>
-                    ,<span className="font-bold text-[#FFCA08]"> faculty</span>,
                     <span className="font-bold text-[#FFCA08]">innovators</span>
-                    ,
+                    , and
                     <span className="font-bold text-[#FFCA08]">
                       technopreneurs
                     </span>
-                    , and
-                    <span className="font-bold text-[#FFCA08]">
-                      researchers
-                    </span>
+                    , 
                     {/* <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#FFCA08] relative inline-block">
                       <span class="relative font-bold text-[#142D58]">
                         researchers
