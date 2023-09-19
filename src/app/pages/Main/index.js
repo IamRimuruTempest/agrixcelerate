@@ -5,9 +5,9 @@ export default function Main() {
       <section id="main">
         <div className="relative min-h-screen overflow-hidden ">
           <div className="mx-auto py-20 md:py-5">
-            <div className="absolute z-30">
-              <div className="w-screen h-screen mx-auto py-2 md:py-24">
-                <div className="flex justify-center align-center mx-12  sm:mx-auto gap-3">
+            <div className="absolute z-30 grid">
+              <div className="w-screen h-screen mx-auto py-2 md:py-2">
+                <div className="flex justify-center align-center mx-12  sm:mx-auto  gap-3">
                   <Image
                     height={50}
                     width={50}

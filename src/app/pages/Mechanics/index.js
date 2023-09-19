@@ -125,7 +125,7 @@ export default function Mechanics() {
                     title="Download Full Mechanics"
                     target="_blank"
                     className="inline-block uppercase mt-4 md:mt-4 px-8 py-3 border border-white hover:border-[#FFCA08] text-base  leading-6 font-medium rounded-full bg-primary-500 hover:bg-primary-700 hover:text-[#FFCA08] focus:outline-none focus:border-primary-700 focus:shadow-outline-indigo  transition ease-in-out duration-150"
-                    href="/Digital Agriculture Innovation Challenge Guidelines.pdf"
+                    href="/AgriXcelerate Innovation Challenge Guidelines.pdf"
                   >
                     Download Mechanics
                   </a>
